@@ -8,7 +8,6 @@ from models.UsersModel import UsersModel
 from models.UsersInfoModel import UsersInformationModel
 #Utils
 from utils.encript import PepperAvancedDinamycs
-
 from loguru import logger
 
 class UserService(object):
