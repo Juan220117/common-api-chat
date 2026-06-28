@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 
 #1.- Obtener URL de la base de datos (debe apuntar a RDS Proxy).
 #DATABASE_URL = os.getenv('DATABASE_URL', 'mysql+pymysql://user:password@rds-proxy-endpoint:3306/mydb')
-#Test
+#Test (Estos valores estaran almacenados en un secreto par mayor seguridad)
 USER =os.getenv("USER")
 PWSD =os.getenv("PWSD")
 HOST =os.getenv("HOST")

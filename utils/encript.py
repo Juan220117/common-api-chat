@@ -8,7 +8,7 @@ from loguru import logger
 class PepperAvancedDinamycs(object):
     """Advanced class to encrypt user password"""
     def __init__(self,rounds:int = 3):
-        self.master_pepper = "Val220117" #Este sera un secreto.
+        self.master_pepper = "Val220117" #Este sera un secreto (Secrets Manager).
         self.rounds = rounds
 
     def _generate_pepper_user(self,username:str,email:Optional[str]=None) -> str:

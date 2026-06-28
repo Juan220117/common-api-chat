@@ -44,7 +44,6 @@ def validate_request(schema_class: Type[BaseModel], require_body: bool = True):
                     return error_response('Request body is required', 400)
                 
                 # Validate with pydantic
-                #import pdb; pdb.set_trace()
                 validated_data = schema_class(**body)
                 
                 # Si hay validación adicional, se puede hacer aquí
